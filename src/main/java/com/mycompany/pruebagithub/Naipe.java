@@ -20,17 +20,19 @@ public class Naipe {
         //creamos una clase baraja, que, como atributo va a tener un array de naipe que como constructor por defecto relleno el aray con todos los naipes
     
     private int carta;
-    private String naipe;
-    
-//    public Naipe(){
-//        
-//        //generamos una carta random 
-//        Random random = new Random();
-//        this.carta = 
-//    
-//}
-                                                                    
+    private String palo;
+   
+    //generamos una carta random 
+    public Naipe(){
         
+        Random random = new Random();
+        this.carta = random.nextInt(1,11);
+        String [] naipes = {"oros", "bastos", "espadas", "copas"};
+        this.palo = naipes[random.nextInt(naipes.length)];
+}
+                                                                   
+        
+    
         
     
 }
